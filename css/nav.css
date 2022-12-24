@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #CCD6A6;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav h3 {
+    font-family: 'Sacramento', cursive;
+    font-size: 30px;
+}
+
+nav a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    background-color: #d6e0af;
+    border: 1px solid rgba(0, 0, 0, 0.089);
+    padding: 8px 10px;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #cdd6a6;
+}
