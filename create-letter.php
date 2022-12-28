@@ -24,6 +24,7 @@
         <textarea name="message" id="message" placeholder="Write your message here."></textarea>
         <br>
         <input type="submit" value="Post" name="post" id="post">
+        <br>
     </form>
 </body>
 </html>

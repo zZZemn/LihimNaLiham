@@ -18,9 +18,8 @@ form {
     margin: auto;
     margin-top: 15vh;
     position: relative;
-    padding: 20px;
+    padding: 40px 20px;
     border-radius: 5px;
-    padding-bottom: 60px;
 }
 
 .first-row {
@@ -43,8 +42,12 @@ form {
     outline: none;
     padding: 5px;
     font-size: 15px;
-    border: 1px solid rgba(0, 0, 0, 0.692);
+    border: 1px solid rgba(0, 0, 0, 0.466);
     background-color: rgba(235, 235, 235, 0.377);
+}
+
+#to:focus {
+    border: 1px solid rgb(0, 0, 0);
 }
 
 #message {
@@ -54,13 +57,18 @@ form {
     outline: none;
     padding: 10px;
     font-size: 15px;
-    border: 1px solid rgba(0, 0, 0, 0.692);
+    border: 1px solid rgba(0, 0, 0, 0.466);
     background-color: rgba(235, 235, 235, 0.377);
+}
+
+#message:focus {
+    border: 1px solid rgb(0, 0, 0);
 }
 
 #post {
     border: 1px solid rgba(0, 0, 0, 0.692);
     background-color: rgba(235, 235, 235, 0.377);
+    color: rgba(0, 0, 0, 0.884);
     padding: 8px 30px;
     font-size: 15px;
     font-weight: 500;
@@ -68,5 +76,11 @@ form {
     right: 20px;
     margin-top: 7px;
     cursor: pointer;
+    transition: 0.4s;
 }
 
+#post:hover {
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgba(235, 235, 235, 0.705);
+    color: black;
+}
