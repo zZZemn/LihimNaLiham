@@ -1,5 +1,22 @@
 <?php 
+ include("database.php");
 
+ if(isset($_POST['post']))
+ {
+    $to = $_POST['to'];
+    $message = $_POST['message'];
+
+    $posting = "INSERT INTO liham(`name`, `message`) VALUES ('$to','$message')";
+
+    if($connect->query($posting) == true)
+    {
+        header("location: index.html");
+    }
+    else
+    {
+        echo '<script type="text/javascript">alert("Invalid Input!");</script>';     
+    }
+ }
 ?>
 
 <!DOCTYPE html>
