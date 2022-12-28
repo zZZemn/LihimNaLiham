@@ -2,4 +2,71 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
+
+body {
+    text-align: center;
+    background-image: url("../img/background-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.815);
+    width: 70%;
+    margin: auto;
+    margin-top: 15vh;
+    position: relative;
+    padding: 20px;
+    border-radius: 5px;
+    padding-bottom: 60px;
+}
+
+.first-row {
+    display: flex;
+    align-items: center;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+}
+
+.close img{
+    height: 35px;
+}
+
+#to {
+    height: 40px;
+    width: 30%;
+    outline: none;
+    padding: 5px;
+    font-size: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.692);
+    background-color: rgba(235, 235, 235, 0.377);
+}
+
+#message {
+    height: 300px;
+    width: 100%;
+    resize: none;
+    outline: none;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.692);
+    background-color: rgba(235, 235, 235, 0.377);
+}
+
+#post {
+    border: 1px solid rgba(0, 0, 0, 0.692);
+    background-color: rgba(235, 235, 235, 0.377);
+    padding: 8px 30px;
+    font-size: 15px;
+    font-weight: 500;
+    position: absolute;
+    right: 20px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+

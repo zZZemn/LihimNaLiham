@@ -15,6 +15,15 @@
     <title>Create a Letter</title>
 </head>
 <body>
-    
+    <form action="" method="post">
+        <div class="first-row">
+            <input type="text" name="to" id="to" placeholder="To:">
+            <a class="close" href="index.html"><img src="img/close.svg" alt="close"></a>
+        </div>
+        <br>
+        <textarea name="message" id="message" placeholder="Write your message here."></textarea>
+        <br>
+        <input type="submit" value="Post" name="post" id="post">
+    </form>
 </body>
 </html>
