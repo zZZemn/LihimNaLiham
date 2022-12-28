@@ -37,6 +37,7 @@ nav a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     letter-spacing: 2px;
+    transition: 0.5s;
 }
 
 nav a:hover {
@@ -79,4 +80,11 @@ center div a {
     font-weight: 500;
     margin: 5px;
     border: 1px solid rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+center div a:hover {
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.37);
 }
