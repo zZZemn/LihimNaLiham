@@ -10,7 +10,7 @@
 
     if($connect->query($posting) == true)
     {
-        header("location: index.html");
+        header("location: letters.php");
     }
     else
     {
