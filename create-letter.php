@@ -34,7 +34,7 @@
 <body>
     <form action="" method="post">
         <div class="first-row">
-            <input type="text" name="to" id="to" placeholder="To:">
+            <input type="text" name="to" id="to" maxlength="20" placeholder="To:">
             <a class="close" href="index.html"><img src="img/close.svg" alt="close"></a>
         </div>
         <br>

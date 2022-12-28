@@ -70,7 +70,7 @@ nav a:hover {
     width: 90%;
     resize: none;
     outline: none;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0);
     padding: 5px;
 }
 
