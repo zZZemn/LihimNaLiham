@@ -5,8 +5,7 @@
 }
 
 body {
-    background-image: url("img/background-image.jpg");
-    background-size: cover;
+    background-image: url("../img/background-image.jpg");
 }
 
 nav {
