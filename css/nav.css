@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url("img/background-image.jpg");
+    background-size: cover;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
