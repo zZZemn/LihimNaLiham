@@ -8,6 +8,7 @@ body {
     background-image: url("../img/background-image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 nav {
@@ -94,6 +95,7 @@ center div a:hover {
     filter: blur(2px);
     transform: translateY(-200%);
     transition: all 1s;
+    transition-delay: 100ms;
 }
 
 .show h3{
@@ -105,23 +107,23 @@ center div a:hover {
 .hidden hr {
     opacity: 0;
     transition: all 1s;
-    transition-delay: 300ms;
+    transform: translateY(10000%);
+    transition-delay: 100ms;
 }
 
 .show hr {
     opacity: 1;
+    transform: translateY(0);
 }
 
-.hidden div{
+.hidden div {
     opacity: 0;
-    filter: blur(2px);
-    transform: translateY(500%);
     transition: all 1s;
-    transition-delay: 500ms;
+    transform: translateY(1000%);
+    transition-delay: 200ms;
 }
 
-.show div{
+.show div {
     opacity: 1;
-    filter: blur(0);
     transform: translateY(0);
 }
