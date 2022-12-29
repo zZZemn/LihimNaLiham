@@ -90,9 +90,30 @@ center div a:hover {
     background-color: rgba(0, 0, 0, 0.37);
 }
 
+.hidden .logo {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show .logo {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.hidden .btnlogin {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 1s;
+}
+
+.show .btnlogin {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 .hidden h3{
     opacity: 0;
-    filter: blur(2px);
     transform: translateY(-200%);
     transition: all 1s;
     transition-delay: 100ms;
@@ -100,7 +121,6 @@ center div a:hover {
 
 .show h3{
     opacity: 1;
-    filter: blur(0);
     transform: translateY(0);
 }
 
