@@ -13,13 +13,14 @@ body {
 }
 
 form {
-    background-color: rgba(255, 255, 255, 0.815);
-    width: 70%;
+    width: 80%;
     margin: auto;
     margin-top: 15vh;
     position: relative;
-    padding: 40px 20px;
+    padding: 30px 30px;
     border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.692);
+    background-color: rgba(0, 0, 0, 0.781);
 }
 
 .first-row {
@@ -27,27 +28,51 @@ form {
     align-items: center;
 }
 
-.close {
+.letters {
     position: absolute;
-    right: 20px;
+    right: 60px;
+    top: 11px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.295);
+    padding: 5px 15px;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border: 1px solid white;
 }
 
-.close img{
-    height: 35px;
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.close ion-icon{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
 }
 
 #to {
     height: 40px;
     width: 30%;
     outline: none;
-    padding: 5px;
+    padding: 10px;
     font-size: 15px;
-    border: 1px solid rgba(0, 0, 0, 0.466);
-    background-color: rgba(235, 235, 235, 0.377);
+    border: 1px solid rgba(255, 255, 255, 0.692);
+    background-color: rgba(0, 0, 0, 0.212);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+}
+
+#to::placeholder {
+    color: rgb(255, 255, 255);
 }
 
 #to:focus {
-    border: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 #message {
@@ -57,30 +82,34 @@ form {
     outline: none;
     padding: 10px;
     font-size: 15px;
-    border: 1px solid rgba(0, 0, 0, 0.466);
-    background-color: rgba(235, 235, 235, 0.377);
+    border: 1px solid rgba(255, 255, 255, 0.692);
+    background-color: rgba(0, 0, 0, 0.212);
+    color: white;
+}
+
+#message::placeholder {
+    color: white;
 }
 
 #message:focus {
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
 }
 
 #post {
-    border: 1px solid rgba(0, 0, 0, 0.692);
-    background-color: rgba(235, 235, 235, 0.377);
-    color: rgba(0, 0, 0, 0.884);
+    border: 1px solid rgba(255, 255, 255, 0.692);
+    background-color: rgba(0, 0, 0, 0.63);
+    color: white;
     padding: 8px 30px;
     font-size: 15px;
     font-weight: 500;
     position: absolute;
-    right: 20px;
-    margin-top: 7px;
+    right: 30px;
+    margin-top: 4px;
     cursor: pointer;
     transition: 0.4s;
 }
 
 #post:hover {
-    border: 1px solid rgb(0, 0, 0);
-    background-color: rgba(235, 235, 235, 0.705);
+    background-color: rgba(255, 255, 255, 0.26);
     color: black;
 }

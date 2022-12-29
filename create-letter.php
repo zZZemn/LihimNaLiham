@@ -35,7 +35,8 @@
     <form action="" method="post">
         <div class="first-row">
             <input type="text" name="to" id="to" maxlength="20" placeholder="To:" required>
-            <a class="close" href="index.html"><img src="img/close.svg" alt="close"></a>
+            <a class="letters" href="letters.php">View letters</a>
+            <a class="close" href="index.html"><ion-icon name="close"></ion-icon></a>
         </div>
         <br>
         <textarea name="message" id="message" placeholder="Write your message here." required></textarea>
@@ -43,5 +44,7 @@
         <input type="submit" value="Post" name="post" id="post">
         <br>
     </form>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 </html>
