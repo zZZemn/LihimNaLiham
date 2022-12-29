@@ -31,15 +31,18 @@ form {
 .letters {
     position: absolute;
     right: 60px;
-    top: 11px;
+    top: 13px;
     color: rgb(255, 255, 255);
     text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.295);
+    background-color: rgba(0, 0, 0, 0.836);
     padding: 5px 15px;
     font-size: 10px;
     font-weight: 600;
     letter-spacing: 2px;
-    border: 1px solid white;
+}
+
+.letters:hover {
+    text-decoration: underline;
 }
 
 .close {
@@ -104,7 +107,7 @@ form {
     font-weight: 500;
     position: absolute;
     right: 30px;
-    margin-top: 4px;
+    margin-top: 3.3px;
     cursor: pointer;
     transition: 0.4s;
 }
