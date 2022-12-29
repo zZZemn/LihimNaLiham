@@ -88,3 +88,40 @@ center div a:hover {
     color: rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.37);
 }
+
+.hidden h3{
+    opacity: 0;
+    filter: blur(2px);
+    transform: translateY(-200%);
+    transition: all 1s;
+}
+
+.show h3{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+.hidden hr {
+    opacity: 0;
+    transition: all 1s;
+    transition-delay: 300ms;
+}
+
+.show hr {
+    opacity: 1;
+}
+
+.hidden div{
+    opacity: 0;
+    filter: blur(2px);
+    transform: translateY(500%);
+    transition: all 1s;
+    transition-delay: 500ms;
+}
+
+.show div{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
