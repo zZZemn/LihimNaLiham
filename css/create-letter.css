@@ -116,3 +116,34 @@ form {
     background-color: rgba(255, 255, 255, 0.26);
     color: black;
 }
+
+.hidden {
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hidden .transition {
+    opacity: 0;
+    transition: all 1s;
+    transition-delay: 1s;
+}
+
+.show .transition {
+    opacity: 1;
+}
+
+.hidden #post {
+    opacity: 0;
+    transition: all 1s;
+    transition-delay: 1s;
+}
+
+.show #post {
+    opacity: 1;
+}

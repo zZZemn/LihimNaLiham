@@ -32,19 +32,20 @@
     <title>Create a Letter</title>
 </head>
 <body>
-    <form action="" method="post">
-        <div class="first-row">
+    <form action="" method="post" class="hidden">
+        <div class="first-row transition">
             <input type="text" name="to" id="to" maxlength="20" placeholder="To:" required>
             <a class="letters" href="letters.php">View letters</a>
             <a class="close" href="index.html"><ion-icon name="close"></ion-icon></a>
         </div>
         <br>
-        <textarea name="message" id="message" placeholder="Write your message here." required></textarea>
+        <textarea class="transition" name="message" id="message" placeholder="Write your message here." required></textarea>
         <br>
         <input type="submit" value="Post" name="post" id="post">
         <br>
     </form>
 
+    <script src="js/app.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 </html>
