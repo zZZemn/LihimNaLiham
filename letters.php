@@ -18,12 +18,12 @@ $liham_result = $connect->query($liham);
     <title>Letters</title>
 </head>
 <body>
-    <nav>
-        <a href="index.html" class="home">Home</a>
-        <h3>Lihim na Liham</h3>
-        <a href="create-letter.php">Create a Letter</a>
+    <nav class="hidden">
+        <a class="nav-transition" href="index.html" class="home">Home</a>
+        <h3 class="nav-transition">Lihim na Liham</h3>
+        <a class="nav-transition" href="create-letter.php">Create a Letter</a>
     </nav>
-    <div class="letter-container">
+    <div class="letter-container hidden">
     <?php 
         if($liham_result->num_rows > 0)
         {
@@ -34,5 +34,6 @@ $liham_result = $connect->query($liham);
         }
     ?>
     </div>
+    <script src="js/app.js"></script>
 </body>
 </html>

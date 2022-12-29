@@ -5,6 +5,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {overflowY: hidden;}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -96,4 +98,23 @@ nav a:hover {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
+}
+
+.hidden .nav-transition {
+    transform: translateY(-200%);
+    transition: all 1s;
+}
+
+.show .nav-transition {
+    transform: translateY(0);
+}
+
+.hidden .letters {
+    transform: translateY(200%);
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+.show .letters {
+    transform: translateY(0);
 }
