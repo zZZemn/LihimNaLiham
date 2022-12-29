@@ -34,11 +34,11 @@
 <body>
     <form action="" method="post">
         <div class="first-row">
-            <input type="text" name="to" id="to" maxlength="20" placeholder="To:">
+            <input type="text" name="to" id="to" maxlength="20" placeholder="To:" required>
             <a class="close" href="index.html"><img src="img/close.svg" alt="close"></a>
         </div>
         <br>
-        <textarea name="message" id="message" placeholder="Write your message here."></textarea>
+        <textarea name="message" id="message" placeholder="Write your message here." required></textarea>
         <br>
         <input type="submit" value="Post" name="post" id="post">
         <br>
