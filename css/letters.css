@@ -5,8 +5,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {overflowY: hidden;}
-
 nav {
     display: flex;
     justify-content: space-between;
