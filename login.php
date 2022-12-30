@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     include("database.php");
 
     $sql = sprintf("SELECT * FROM admin
-                    WHERE username = '%s'",
+                    WHERE email = '%s'",
                    $connect->real_escape_string($_POST["email"]));
 
     $result = $connect->query($sql);
