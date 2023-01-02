@@ -1,7 +1,7 @@
 <?php 
  include("database.php");
 
-$liham = "SELECT * FROM liham ORDER BY id DESC";
+$liham = "SELECT * FROM message ORDER BY id DESC";
 $liham_result = $connect->query($liham); 
 ?>
 

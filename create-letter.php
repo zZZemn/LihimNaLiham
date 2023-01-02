@@ -6,7 +6,7 @@
     $to = $_POST['to'];
     $message = $_POST['message'];
 
-    $posting = "INSERT INTO liham(`name`, `message`) VALUES ('$to','$message')";
+    $posting = "INSERT INTO message(`name`, `message`) VALUES ('$to','$message')";
 
     if($connect->query($posting) == true)
     {

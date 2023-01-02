@@ -4,7 +4,7 @@ $is_invalid = false;
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     include("database.php");
 
-    $sql = sprintf("SELECT * FROM admin
+    $sql = sprintf("SELECT * FROM admin_account
                     WHERE email = '%s'",
                    $connect->real_escape_string($_POST["email"]));
 
