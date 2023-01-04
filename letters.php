@@ -1,8 +1,17 @@
 <?php 
  include("database.php");
+$search = false;
 
 $liham = "SELECT * FROM message ORDER BY id DESC";
-$liham_result = $connect->query($liham); 
+$liham_result = $connect->query($liham);
+
+if(isset($_POST['btnsearch']))
+{
+    $searchValue = $_POST['search'];
+    $searching = "SELECT * FROM message WHERE name = '$searchValue'";
+    $searching_result = $connect->query($searching);
+    $search = true;
+}
 ?>
 
 <!DOCTYPE html>
@@ -19,21 +28,50 @@ $liham_result = $connect->query($liham);
 </head>
 <body>
     <nav class="hidden">
-        <a class="nav-transition" href="index.html" class="home">Home</a>
         <h3 class="nav-transition">Lihim na Liham</h3>
-        <a class="nav-transition" href="create-letter.php">Create a Letter</a>
+        <form action="" method="post" class="frmsearch">
+            <input type="text" name="search" id="search" class="search">
+            <input type="submit" name="btnsearch" id="btnsearch" class="btnsearch" value="Search"> 
+        </form>
+        <div>
+            <a class="nav-transition" href="index.html" class="home">Home</a>
+            <a class="nav-transition" href="create-letter.php">Create a Letter</a>
+        </div>
     </nav>
     <div class="letter-container hidden">
     <?php 
-        if($liham_result->num_rows > 0)
+        if($search == true)
         {
-           while($row = $liham_result->fetch_assoc())
-           {
-            echo "<div class='letters'><p class='name'>To: ".$row['name']."</p><br><hr><br><textarea readonly class='message'>".$row['message']."</textarea><div class='tnd'><em>".$row['time']."</em>-<em>".$row['date']."</em></div></div>";
-           } 
+            if($searching_result->num_rows > 0)
+            {
+                while($row = $searching_result->fetch_assoc())
+                {
+                    echo "<div class='letters'><p class='name'>To: ".$row['name']."</p><br><hr><br><textarea readonly class='message'>".$row['message']."</textarea><div class='tnd'><em>".$row['time']."</em>-<em>".$row['date']."</em></div></div>";
+                } 
+            }
+            else 
+            {
+            echo "<div><h1>Not found</h1></div>";
+            }
+        }
+        else {
+            if($liham_result->num_rows > 0)
+            {
+                while($row = $liham_result->fetch_assoc())
+                {
+                    echo "<div class='letters'><p class='name'>To: ".$row['name']."</p><br><hr><br><textarea readonly class='message'>".$row['message']."</textarea><div class='tnd'><em>".$row['time']."</em>-<em>".$row['date']."</em></div></div>";
+                } 
+            }
         }
     ?>
     </div>
     <script src="js/app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
+</script>
 </body>
 </html>
