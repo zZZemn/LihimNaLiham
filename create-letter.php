@@ -12,14 +12,15 @@ include("time&date.php");
 
     $posting = "INSERT INTO message(`name`, `message`, `time`, `date`) VALUES ('$to','$message', '$postTime', '$postDate')";
 
-    if($connect->query($posting) == true)
+    $connect->query($posting);
+    /*if($connect->query($posting) == true)
     {
         header("location: letters.php");
     }
     else
     {
         echo '<script type="text/javascript">alert("Invalid Input!");</script>';     
-    }
+    }*/
  }
 ?>
 
