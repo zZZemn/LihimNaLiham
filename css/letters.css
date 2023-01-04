@@ -126,12 +126,25 @@ nav a:hover {
 
 .notFound {
     width: 100%;
-    height: 86vh;
+    height: 75vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.notFound h1 {
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.notFound a {
     color: red;
+    font-size: 13px;
+    margin-top: 10px;
+    font-weight: 400;
 }
 
 
