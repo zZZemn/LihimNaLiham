@@ -1,12 +1,16 @@
 <?php 
  include("database.php");
+include("time&date.php");
 
  if(isset($_POST['post']))
  {
+    $postTime = $time;
+    $postDate = $date;
+
     $to = $_POST['to'];
     $message = $_POST['message'];
 
-    $posting = "INSERT INTO message(`name`, `message`) VALUES ('$to','$message')";
+    $posting = "INSERT INTO message(`name`, `message`, `time`, `date`) VALUES ('$to','$message', '$postTime', '$postDate')";
 
     if($connect->query($posting) == true)
     {
