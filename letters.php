@@ -48,10 +48,10 @@ if(isset($_POST['btnsearch']))
                 {
                     echo "<div class='letters'><p class='name'>To: ".$row['name']."</p><br><hr><br><textarea readonly class='message'>".$row['message']."</textarea><div class='tnd'><em>".$row['time']."</em>-<em>".$row['date']."</em></div></div>";
                 } 
-            }
+            }   
             else 
             {
-            echo "<div class='notFound'><div><h1>".$searchValue." not found</h1></div><div><a href='letters.php'>View all</a></div></div>";
+                echo "<div class='notFound'><div><h1>".$searchValue." not found</h1></div><div><a href='letters.php'>View all</a></div></div>";
             }
         }
         else {
