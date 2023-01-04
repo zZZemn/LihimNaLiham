@@ -124,6 +124,13 @@ nav a:hover {
     letter-spacing: 1px;
 }
 
+.notFound {
+    background-color: blue;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
 
 /* width */
 ::-webkit-scrollbar {

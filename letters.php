@@ -51,7 +51,7 @@ if(isset($_POST['btnsearch']))
             }
             else 
             {
-            echo "<div><h1>Not found</h1></div>";
+            echo "<div class='notFound'><div><h1>".$searchValue." not found</h1></div><div><a href='letters.php'>View all</a></div></div>";
             }
         }
         else {
