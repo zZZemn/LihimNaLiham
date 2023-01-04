@@ -177,6 +177,25 @@ nav a:hover {
     transform: translateY(0);
 }
 
+.hidden .frmsearch {
+    transform: translateY(-200%);
+    transition: all 1s;
+}
+
+.show .frmsearch {
+    transform: translateY(0);
+}
+
+.hidden {
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0);
+    transition: all 1s;
+    transition-delay: 1s;
+}
+
+.show {
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.589);
+}
+
 .hidden .letters {
     transform: translateY(200%);
     transition: 1s;
@@ -186,3 +205,5 @@ nav a:hover {
 .show .letters {
     transform: translateY(0);
 }
+
+

@@ -33,9 +33,9 @@ if(isset($_POST['btnsearch']))
             <input type="text" name="search" id="search" class="search">
             <input type="submit" name="btnsearch" id="btnsearch" class="btnsearch" value="Search"> 
         </form>
-        <div>
-            <a class="nav-transition" href="index.html" class="home">Home</a>
-            <a class="nav-transition" href="create-letter.php">Create a Letter</a>
+        <div class="nav-transition">
+            <a href="index.html" class="home">Home</a>
+            <a href="create-letter.php">Create a Letter</a>
         </div>
     </nav>
     <div class="letter-container hidden">
