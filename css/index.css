@@ -21,13 +21,16 @@ nav {
     background-color: #f5f5f50e;
 }
 
-nav h3 {
+.logo {
     font-family: 'Sacramento', cursive;
     font-size: 20px;
     color: white;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
-nav a {
+.btnlogin {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 12px;
@@ -41,7 +44,7 @@ nav a {
     transition: 0.5s;
 }
 
-nav a:hover {
+.btnlogin:hover {
     background-color: #f5f5f50a;
 }
 

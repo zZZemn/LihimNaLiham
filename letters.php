@@ -28,7 +28,7 @@ if(isset($_POST['btnsearch']))
 </head>
 <body>
     <nav class="hidden">
-        <h3 class="nav-transition">Lihim na Liham</h3>
+        <a href="letters.php" class="nav-transition logo">Lihim na Liham</a>
         <form action="" method="post" class="frmsearch">
             <input type="text" name="search" id="search" class="search">
             <input type="submit" name="btnsearch" id="btnsearch" class="btnsearch" value="Search"> 
