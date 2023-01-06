@@ -27,7 +27,7 @@ if(isset($_POST['btnsearch']))
     <title>Letters</title>
 </head>
 <body>
-    <nav class="hidden">
+    <nav class="hidden borderhidden">
         <a href="letters.php" class="nav-transition logo">Lihim na Liham</a>
         <form action="" method="post" class="frmsearch">
             <input type="text" name="search" id="search" class="search">
@@ -66,6 +66,7 @@ if(isset($_POST['btnsearch']))
     ?>
     </div>
     <script src="js/app.js"></script>
+    <script src="js/borderhidden.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script>
