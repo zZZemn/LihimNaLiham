@@ -15,7 +15,7 @@
     <title>Lihim na Liham</title>
 </head>
 <body>
-        <ul class="flex-column" style="width: 10%;">
+        <ul class="flex-column bg-dark p-5 " style="width: 10%;">
             <li class="nav-item">
                <a href="#">Sample</a> 
             </li>
