@@ -23,7 +23,7 @@
                <a href="#">Sample</a> 
             </li>
             <li class="nav-item">
-               <a href="#">Sample </a> 
+               <a href="#">Sample</a> 
             </li>
             <li class="nav-item">   
                <a href="#">Sample  </a> 
