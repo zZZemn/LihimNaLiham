@@ -14,7 +14,6 @@
     <title>Lihim na Liham</title>
 </head>
 <body>
-       
-hello
+   
 </body>
 </html>
