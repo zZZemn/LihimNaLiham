@@ -11,15 +11,21 @@ nav {
     background-color: black;
     width: 200px;
     height: 100vh;
-    padding: 5px;
+    padding: 5px 10px;
 }
 
 nav a {
     color: white;
     margin: 5px;
-    padding: 15px;
+    padding: 20px;
     font-size: 17px;
     text-decoration: none;
+}
+
+nav hr {
+    height: 1px;
+    background-color: white;
+    border: none;
 }
 
 .padding {
@@ -35,4 +41,5 @@ nav a {
     font-weight: 600;
     letter-spacing: 1px;
     text-align: center;
+    padding: 10px !important;
 }
