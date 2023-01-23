@@ -14,6 +14,10 @@
     <title>Lihim na Liham</title>
 </head>
 <body>
-   
+    <nav>
+        <a class="logo" href="letters.php">Lihim na Liham</a>
+        <a href="admin-letters.php" class="letters">Letters</a>
+        <a href="index.html" class="logout"></a>
+    </nav>
 </body>
 </html>
