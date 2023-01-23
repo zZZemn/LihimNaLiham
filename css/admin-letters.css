@@ -1,0 +1,67 @@
+.letters-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: blue;
+    height: 100vh;
+    width: 85vw;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.letters {
+    display: flex;
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 10px;
+    position: relative;
+    padding-top: 10px !important;
+}
+
+.letters hr {
+    height: 1px;
+    border: none;
+    background-color: black;
+    width: 90%;
+    margin: auto;
+}
+
+.letters p {
+    font-weight: 500;
+    font-size: 15px;
+    margin: 0px 20px;
+
+}
+
+.message {
+    height: 70%;
+    width: 90%;
+    resize: none;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0);
+    padding: 5px;
+}
+
+.name {
+    margin-top: 15px !important;
+}
+
+.tnd {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 8px;
+    margin: 5px 10px;
+    color: rgb(0, 0, 0);
+} 
+
+.tnd em {
+    margin: 5px;
+    letter-spacing: 1px;
+}

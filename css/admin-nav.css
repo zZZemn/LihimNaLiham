@@ -9,7 +9,7 @@ nav {
     display: flex;
     flex-direction: column;
     background-color: black;
-    width: 200px;
+    width: 15vw;
     height: 100vh;
     padding: 5px 10px;
 }
