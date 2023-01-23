@@ -34,6 +34,10 @@ session_start();
             <a href="logout.php" class="logout padding">Logout</a>
             <hr>
         </nav>
+
+        <div class="letters">
+            hello
+        </div>
     
     <?php else: ?>  
         <div class="no-account-selected">
