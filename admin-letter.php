@@ -49,6 +49,10 @@ $search = false;
         </nav>
 
         <div class="letters-container">
+            <form action="" method="post" class="frmsearch">
+                <input type="text" name="search" id="search" class="search">
+                <input type="submit" name="btnsearch" id="btnsearch" class="btnsearch" value="Search"> 
+            </form>
         <?php  
             if($search == true)
             {
@@ -69,10 +73,6 @@ $search = false;
                 {
                     while($row = $liham_result->fetch_assoc())
                     {
-                        echo '<form action="" method="post" class="frmsearch">
-                        <input type="text" name="search" id="search" class="search">
-                        <input type="submit" name="btnsearch" id="btnsearch" class="btnsearch" value="Search"> 
-                        </form>';
                         echo "<div class='letters'><p class='name'>To: ".$row['name']."</p><br><hr><br><textarea readonly class='message'>".$row['message']."</textarea>
                         <a class='btn-del' href='delete-message.php?id=".$row['id']."'>Delete</a><div class='tnd'><em>".$row['time']."</em>-<em>".$row['date']."</em></div></div>";
                     } 
