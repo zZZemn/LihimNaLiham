@@ -68,7 +68,7 @@ $search = false;
                     echo "<div class='notFound'><h1>".$searchValue." not found</h1><a href='letters.php'>View all</a></div>";
                 }
             }
-            else {
+            else { 
                 if($liham_result->num_rows > 0)
                 {
                     while($row = $liham_result->fetch_assoc())
