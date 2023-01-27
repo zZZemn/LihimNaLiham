@@ -2,12 +2,12 @@ body {
     overflow: hidden;
 }
 
-
 .letters-container {
     position: absolute;
-    top: 50px;
+    top: 75px;
+    border-top: 1px solid black;
     right: 0;
-    height: 100vh;
+    height: 87vh;
     width: 85vw;
     overflow-y: scroll;
     display: flex;
@@ -103,6 +103,7 @@ body {
     border: 1px solid black;
     outline: none;
     padding: 5px;
+    border-right: none;
 }
 
 .frmsearch .btnsearch {
