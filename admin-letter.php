@@ -47,12 +47,13 @@ $search = false;
             <a href="logout.php" class="padding">Logout</a>
             <hr>
         </nav>
-
-        <div class="letters-container">
-            <form action="" method="post" class="frmsearch">
+        
+        <form action="" method="post" class="frmsearch">
                 <input type="text" name="search" id="search" class="search">
                 <input type="submit" name="btnsearch" id="btnsearch" class="btnsearch" value="Search"> 
-            </form>
+        </form>
+
+        <div class="letters-container">
         <?php  
             if($search == true)
             {

@@ -1,6 +1,11 @@
+body {
+    overflow: hidden;
+}
+
+
 .letters-container {
     position: absolute;
-    top: 0;
+    top: 50px;
     right: 0;
     height: 100vh;
     width: 85vw;
@@ -77,6 +82,34 @@
     text-decoration: none;
 }
 
+/* ------ */
+
 .frmsearch {
     position: absolute;
+    top: 0;
+    right: 0;
+    width: 83vw;
+    height: 35px;
+    margin: 20px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.frmsearch .search {
+    width: 50%;
+    height: 35px;
+
+    border: 1px solid black;
+    outline: none;
+    padding: 5px;
+}
+
+.frmsearch .btnsearch {
+    width: 5%;
+    height: 35px;
+    
+    border: 1px solid black;
+    outline: none;
+    padding: 5px;
 }
