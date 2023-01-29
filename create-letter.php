@@ -19,7 +19,7 @@ include("time&date.php");
     else
     {
         echo '<script type="text/javascript">alert("Invalid Input!");</script>';     
-    }
+    } 
  }
 ?>
 
